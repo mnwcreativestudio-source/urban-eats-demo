@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography & Ambience Gallery | Urban Eats</title>
+  <meta name="description" content="Immerse yourself in the visual world of Urban Eats. Browse high-resolution photography of our signature fusion creations, interior design, craft bar, and private suites.">
+  <link rel="canonical" href="https://urbaneats.in/gallery.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gallery | Urban Eats | Bold Flavours. Modern Dining.">
+  <meta property="og:description" content="Explore the visual artistry of Urban Eats. Architectural dining spaces, culinary craftsmanship, and craft cocktails.">
+  <meta property="og:image" content="assets/images/hero-interior.jpg">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Demo Notice Banner -->
+  <div class="demo-banner">
+    <span>Portfolio showcase concept curated for <strong>Urban Eats</strong> •</span>
+  </div>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container-wide header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Urban Eats Home">
+        <div class="brand-symbol">UE</div>
+        <div class="brand-text">
+          <span class="brand-name">Urban Eats</span>
+          <span class="brand-tagline">Bold Flavours. Modern Dining.</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="about.html" class="nav-link">Our Story</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="private-dining.html" class="nav-link">Private Dining</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm header-cta" data-open-modal="reservation">
+          Reserve a Table
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" id="navBackdrop"></div>
+  <aside class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <div>
+      <span class="brand-name" style="font-size: 1.25rem; display: block; margin-bottom: 2rem;">Urban Eats</span>
+      <ul class="mobile-nav-menu">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+        <li><a href="about.html" class="mobile-nav-link">Our Story</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link active">Gallery</a></li>
+        <li><a href="private-dining.html" class="mobile-nav-link">Private Dining</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        <li><a href="faq.html" class="mobile-nav-link">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="mobile-nav-footer">
+      <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="reservation">
+        Reserve a Table
+      </button>
+      <div class="mobile-nav-info">
+        <p><strong>LOCATION • LOCATE US</strong></p>
+        <p>Open Daily • 12:00 PM – Late</p>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+      <div class="container">
+        <div class="section-eyebrow">Visual Stories</div>
+        <h1 class="subpage-title">The Gallery</h1>
+        <p class="subpage-desc">
+          Step inside our dining spaces, explore our culinary creations, and experience the warm, cinematic ambience of Urban Eats. Click any photograph to view in full resolution.
+        </p>
+      </div>
+    </section>
+
+    <!-- Complete Gallery Grid -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="gallery-grid">
+          <!-- 1. Hero Interior -->
+          <div class="gallery-item span-2" tabindex="0" role="button" aria-label="Open photo: Main Dining Hall">
+            <img src="assets/images/hero-interior.jpg" alt="Main dining hall with amber chandeliers and charcoal architecture" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">The Grand Dining Hall & Chandeliers</div>
+              <div class="gallery-category">Interior Ambience</div>
+            </div>
+          </div>
+
+          <!-- 2. Paneer Tikka -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Truffle Butter Paneer Tikka">
+            <img src="assets/images/dish-paneer-tikka.jpg" alt="Truffle Butter Paneer Tikka with micro herbs" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Truffle Butter Paneer Tikka</div>
+              <div class="gallery-category">Signature Starters</div>
+            </div>
+          </div>
+
+          <!-- 3. Cocktail Bar -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Mixology Bar">
+            <img src="assets/images/bar-cocktail.jpg" alt="Mixologist crafting smoked bourbon cocktail" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">The Urban Bar & Smoked Cocktails</div>
+              <div class="gallery-category">Beverage Craft</div>
+            </div>
+          </div>
+
+          <!-- 4. Butter Chicken -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Urban Butter Chicken">
+            <img src="assets/images/dish-butter-chicken.jpg" alt="Urban Butter Chicken with garlic truffle naan" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">16-Hour Urban Butter Chicken</div>
+              <div class="gallery-category">Mains & Specialties</div>
+            </div>
+          </div>
+
+          <!-- 5. Tandoor Kitchen Flame -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Live Clay Tandoor Hearth">
+            <img src="assets/images/kitchen-flame.jpg" alt="Chef lifting skewers from clay tandoor hearth" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">The Charcoal Tandoor Pass</div>
+              <div class="gallery-category">Kitchen Artistry</div>
+            </div>
+          </div>
+
+          <!-- 6. Burrata Chaat -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Artisanal Burrata Chaat">
+            <img src="assets/images/dish-burrata-chaat.jpg" alt="Burrata cheese with tamarind reduction and sev" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Artisanal Burrata Chaat</div>
+              <div class="gallery-category">Fusion Small Plates</div>
+            </div>
+          </div>
+
+          <!-- 7. Private Dining Room -->
+          <div class="gallery-item span-2" tabindex="0" role="button" aria-label="Open photo: The Velvet Lounge Suite">
+            <img src="assets/images/private-dining.jpg" alt="Velvet Lounge private dining room with wine wall" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">The Velvet Lounge Suite</div>
+              <div class="gallery-category">Private Dining</div>
+            </div>
+          </div>
+
+          <!-- 8. Mushroom Risotto -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Wild Morel Mushroom Risotto">
+            <img src="assets/images/dish-mushroom-risotto.jpg" alt="Wild forest morel risotto with aged parmesan tuile" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Wild Morel Mushroom Risotto</div>
+              <div class="gallery-category">Vegetarian Mains</div>
+            </div>
+          </div>
+
+          <!-- 9. Chef Arjun Mehta -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Chef Arjun Mehta">
+            <img src="assets/images/chef-arjun-mehta.jpg" alt="Executive Chef Arjun Mehta in kitchen" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Executive Chef Arjun Mehta</div>
+              <div class="gallery-category">Culinary Direction</div>
+            </div>
+          </div>
+
+          <!-- 10. Smoked Tandoori Chicken -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Smoked Tandoori Chicken">
+            <img src="assets/images/dish-tandoori-chicken.jpg" alt="Smoked Tandoori Chicken with mint foam" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Smoked Tandoori Chicken</div>
+              <div class="gallery-category">Tandoor Hearth</div>
+            </div>
+          </div>
+
+          <!-- 11. Dark Chocolate Jamun -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Dark Chocolate Gulab Jamun">
+            <img src="assets/images/dish-chocolate-gulab-jamun.jpg" alt="Dark Chocolate Gulab Jamun with molten core and vanilla gelato" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Dark Chocolate Gulab Jamun</div>
+              <div class="gallery-category">Dessert Artistry</div>
+            </div>
+          </div>
+
+          <!-- 12. Culinary Craft Tweezers Plating -->
+          <div class="gallery-item span-2" tabindex="0" role="button" aria-label="Open photo: Precision Culinary Plating">
+            <img src="assets/images/culinary-craft.jpg" alt="Precision tweezers plating of fine dining lamb chop" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Precision Finishing at The Pass</div>
+              <div class="gallery-category">Behind The Scenes</div>
+            </div>
+          </div>
+
+          <!-- 13. Ambience Candle Table -->
+          <div class="gallery-item span-2" tabindex="0" role="button" aria-label="Open photo: Intimate Candlelit Table">
+            <img src="assets/images/ambience-table.jpg" alt="Candlelit table at Urban Eats with glowing logo in background" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Intimate Evening Table Setting</div>
+              <div class="gallery-category">Atmosphere & Mood</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lightbox Trigger Note -->
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.5rem;">
+            Experience the culinary artistry in person at our LOCATION dining room.
+          </p>
+          <button type="button" class="btn btn-primary btn-lg" data-open-modal="reservation">
+            Reserve Your Evening
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col-brand">
+        <a href="index.html" class="brand-logo" style="margin-bottom: 0.5rem;">
+          <div class="brand-symbol">UE</div>
+          <div class="brand-text">
+            <span class="brand-name">Urban Eats</span>
+            <span class="brand-tagline">Bold Flavours. Modern Dining.</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          An elevated dining destination where progressive Indian soul meets contemporary culinary craft.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="menu.html" class="footer-link">Menu</a></li>
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+          <li><a href="private-dining.html" class="footer-link">Private Dining</a></li>
+          <li><a href="reservations.html" class="footer-link">Reservations</a></li>
+          <li><a href="faq.html" class="footer-link">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Visit</h4>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>LOCATION • LOCATE US</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            Mon–Thu: 12:00 PM – 11:00 PM<br>
+            Fri–Sat: 12:00 PM – 12:00 AM<br>
+            Sun: 12:00 PM – 10:30 PM
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Contact</h4>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="javascript:void(0)" class="demo-action-btn" style="color: inherit;">+00 000 000 0000</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="javascript:void(0)" class="demo-action-btn" style="color: inherit;">hello@example.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>
+        © 2026 Urban Eats. All rights reserved. Designed by MNW Creative Studio.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Action Bar -->
+  <aside class="mobile-action-bar" aria-label="Mobile Quick Actions">
+    <div class="mobile-action-bar-inner">
+      <a href="javascript:void(0)" class="action-bar-btn demo-action-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Call</span>
+      </a>
+      <a href="javascript:void(0)" class="action-bar-btn demo-action-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+      <a href="menu.html" class="action-bar-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+        <span>Menu</span>
+      </a>
+      <button type="button" class="action-bar-btn highlight" data-open-modal="reservation" style="border: none; cursor: pointer;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <span>Reserve</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+    <button class="lightbox-close" aria-label="Close Lightbox">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox-btn lightbox-prev" aria-label="Previous Photo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="lightbox-btn lightbox-next" aria-label="Next Photo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="lightbox-content">
+      <div class="lightbox-img-wrap">
+        <img src="" alt="" class="lightbox-img">
+      </div>
+      <div class="lightbox-caption">
+        <div class="lightbox-caption-title"></div>
+        <div class="lightbox-caption-counter"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Universal Reservation Modal -->
+  <div class="modal-backdrop" data-modal="reservation" role="dialog" aria-modal="true" aria-label="Table Reservation Modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <form class="reservation-form" novalidate>
+        <div class="section-eyebrow no-after">Online Booking</div>
+        <h3 style="font-size: 1.65rem; margin-bottom: 0.35rem;">Reserve Your Table</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Urban Eats • LOCATION</p>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Full Name <span class="req">*</span></label>
+            <input type="text" name="name" class="form-control" placeholder="Your name" required>
+            <span class="form-error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="req">*</span></label>
+            <input type="tel" name="phone" class="form-control" placeholder="+00 000 000 0000" required>
+            <span class="form-error-msg"></span>
+          </div>
+          <div class="form-group col-span-2">
+            <label class="form-label">Email Address <span class="req">*</span></label>
+            <input type="email" name="email" class="form-control" placeholder="hello@example.com" required>
+            <span class="form-error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Date <span class="req">*</span></label>
+            <input type="date" name="date" class="form-control" required>
+            <span class="form-error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Time <span class="req">*</span></label>
+            <select name="time" class="form-control" required>
+              <option value="" disabled selected>Select time</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="1:30 PM">1:30 PM</option>
+              <option value="7:30 PM">7:30 PM</option>
+              <option value="8:30 PM">8:30 PM</option>
+              <option value="9:30 PM">9:30 PM</option>
+            </select>
+            <span class="form-error-msg"></span>
+          </div>
+          <div class="form-group col-span-2" style="margin-top: 0.5rem;">
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Table Request</button>
+          </div>
+        </div>
+      </form>
+      <div class="reservation-success-card">
+        <div class="success-check-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 class="success-title" style="font-size: 1.5rem;">Table Reserved</h3>
+        <p class="success-desc">
+          Your reservation request has been received. Reference: <strong class="receipt-ref" style="color: var(--gold-light);">UE-CH-0000</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

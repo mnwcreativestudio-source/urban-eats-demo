@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Menu | Urban Eats | Progressive Indian Gastronomy</title>
+  <meta name="description" content="Explore the complete culinary menu of Urban Eats. 32+ handcrafted dishes spanning artisanal tandoor, delicate small plates, rich slow-cooked curries, and craft cocktails.">
+  <link rel="canonical" href="https://urbaneats.in/menu.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <meta property="og:type" content="restaurant.menu">
+  <meta property="og:title" content="The Menu | Urban Eats | Bold Flavours. Modern Dining.">
+  <meta property="og:description" content="Discover our 32+ handcrafted dishes: tandoor specialties, progressive curries, wild morel risotto, and signature desserts.">
+  <meta property="og:image" content="assets/images/dish-paneer-tikka.jpg">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Demo Notice Banner -->
+  <div class="demo-banner">
+    <span>Portfolio showcase concept curated for <strong>Urban Eats</strong> •</span>
+  </div>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container-wide header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Urban Eats Home">
+        <div class="brand-symbol">UE</div>
+        <div class="brand-text">
+          <span class="brand-name">Urban Eats</span>
+          <span class="brand-tagline">Bold Flavours. Modern Dining.</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link active">Menu</a></li>
+          <li><a href="about.html" class="nav-link">Our Story</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="private-dining.html" class="nav-link">Private Dining</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm header-cta" data-open-modal="reservation">
+          Reserve a Table
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop" id="navBackdrop"></div>
+  <aside class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <div>
+      <span class="brand-name" style="font-size: 1.25rem; display: block; margin-bottom: 2rem;">Urban Eats</span>
+      <ul class="mobile-nav-menu">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="menu.html" class="mobile-nav-link active">Menu</a></li>
+        <li><a href="about.html" class="mobile-nav-link">Our Story</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="private-dining.html" class="mobile-nav-link">Private Dining</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        <li><a href="faq.html" class="mobile-nav-link">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="mobile-nav-footer">
+      <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="reservation">
+        Reserve a Table
+      </button>
+      <div class="mobile-nav-info">
+        <p><strong>LOCATION • LOCATE US</strong></p>
+        <p>Open Daily • 12:00 PM – Late</p>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+      <div class="container">
+        <div class="section-eyebrow">Culinary Repertoire</div>
+        <h1 class="subpage-title">The Complete Menu</h1>
+        <p class="subpage-desc">
+          An ongoing dialogue between Indian ancestral spices and modern culinary techniques. All dishes prepared à la minute with locally sourced organic produce.
+        </p>
+
+        <!-- Dietary Filters & Search -->
+        <div style="margin-top: 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 1.25rem;">
+          <!-- Search Bar -->
+          <div style="position: relative; max-width: 440px; width: 100%;">
+            <input type="text" class="form-control menu-search-input" placeholder="Search dishes, ingredients (e.g. Morel, Paneer, Lamb)..." style="padding-left: 2.75rem; border-radius: var(--radius-pill);">
+            <svg style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--gold-primary);" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </div>
+
+          <!-- Filter Pills -->
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
+            <button type="button" class="btn btn-sm btn-ghost dietary-filter-btn active" data-filter="all">All Dishes</button>
+            <button type="button" class="btn btn-sm btn-ghost dietary-filter-btn" data-filter="veg">Vegetarian</button>
+            <button type="button" class="btn btn-sm btn-ghost dietary-filter-btn" data-filter="nonveg">Non-Vegetarian</button>
+            <button type="button" class="btn btn-sm btn-ghost dietary-filter-btn" data-filter="vegan">Vegan</button>
+            <button type="button" class="btn btn-sm btn-ghost dietary-filter-btn" data-filter="gluten-free">Gluten-Free</button>
+            <button type="button" class="btn btn-sm btn-ghost dietary-filter-btn" data-filter="special">Chef’s Special</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticky Category Nav -->
+    <nav class="sticky-cat-nav" aria-label="Menu Category Navigation">
+      <div class="container">
+        <ul class="sticky-cat-list">
+          <li><button class="cat-nav-btn active" data-target="cat-starters">Starters</button></li>
+          <li><button class="cat-nav-btn" data-target="cat-small-plates">Small Plates</button></li>
+          <li><button class="cat-nav-btn" data-target="cat-tandoor">Tandoor</button></li>
+          <li><button class="cat-nav-btn" data-target="cat-veg-mains">Vegetarian Mains</button></li>
+          <li><button class="cat-nav-btn" data-target="cat-non-veg-mains">Non-Veg Mains</button></li>
+          <li><button class="cat-nav-btn" data-target="cat-rice-breads">Rice & Breads</button></li>
+          <li><button class="cat-nav-btn" data-target="cat-desserts">Desserts</button></li>
+          <li><button class="cat-nav-btn" data-target="cat-beverages">Beverages</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Full Menu Sections Container -->
+    <div class="container section-padding" style="padding-top: 4rem;">
+
+      <!-- Empty state when search filters nothing -->
+      <div class="menu-empty-state" style="display: none; text-align: center; padding: 4rem 1rem;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">No dishes found</h3>
+        <p style="color: var(--text-muted);">Try adjusting your search query or dietary filters.</p>
+      </div>
+
+      <!-- 1. STARTERS -->
+      <section class="menu-category-section" id="cat-starters" style="margin-bottom: 5rem;">
+        <div style="border-bottom: 2px solid var(--border-gold-subtle); padding-bottom: 0.75rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: baseline;">
+          <h2 style="font-size: 2rem; color: var(--gold-light);">01. Starters</h2>
+          <span style="font-size: 0.8125rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">Appetizers & Amuse</span>
+        </div>
+
+        <div class="menu-list-grid">
+          <!-- Item 1 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Truffle Butter Paneer Tikka <span class="badge badge-veg">Veg</span><span class="badge badge-special">Special</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹495</span>
+            </div>
+            <p class="menu-item-desc item-desc">Artisanal cottage cheese infused with smoked spices, French Périgord white truffle butter glaze, fresh mint emulsion, and microgold leaf.</p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="menu-item-row full-menu-item" data-tags="nonveg special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Amritsari Soft Shell Crab <span class="badge badge-nonveg">Non-Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹625</span>
+            </div>
+            <p class="menu-item-desc item-desc">Crisp spiced gram flour batter, carom seed salt, charred Meyer lime, accompanied by crushed avocado and kaffir lime aioli.</p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="menu-item-row full-menu-item" data-tags="nonveg">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Smoked Galouti Sliders <span class="badge badge-nonveg">Non-Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹545</span>
+            </div>
+            <p class="menu-item-desc item-desc">Silken lamb patties perfumed with potli masala, toasted brioche buns, fresh mint lacquer, and caramelized shallot jam.</p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="menu-item-row full-menu-item" data-tags="vegan gluten-free">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Crispy Lotus Stem Honey Chilli <span class="badge badge-vegan">Vegan</span><span class="badge badge-veg">GF</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹425</span>
+            </div>
+            <p class="menu-item-desc item-desc">Hand-sliced wok-tossed lotus root, Kashmiri chilli reduction, wild forest honey glaze, roasted white sesame seeds.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. SMALL PLATES -->
+      <section class="menu-category-section" id="cat-small-plates" style="margin-bottom: 5rem;">
+        <div style="border-bottom: 2px solid var(--border-gold-subtle); padding-bottom: 0.75rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: baseline;">
+          <h2 style="font-size: 2rem; color: var(--gold-light);">02. Small Plates</h2>
+          <span style="font-size: 0.8125rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">Modern Street Craft</span>
+        </div>
+
+        <div class="menu-list-grid">
+          <!-- Item 5 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Artisanal Burrata Chaat <span class="badge badge-veg">Veg</span><span class="badge badge-special">Icon</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹475</span>
+            </div>
+            <p class="menu-item-desc item-desc">Pugliese creamy burrata, cumin roasted heirloom baby potatoes, date-tamarind coulis, fine nylon sev, and ruby pomegranate gems.</p>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="menu-item-row full-menu-item" data-tags="vegan gluten-free">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Pulled Jackfruit Tacos <span class="badge badge-vegan">Vegan</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹445</span>
+            </div>
+            <p class="menu-item-desc item-desc">Tender young jackfruit braised in Chettinad peppercorn spices, served inside handmade jowar millet taco shells with pickled radishes.</p>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Avocado & Sev Puri Mille-Feuille <span class="badge badge-veg">Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹415</span>
+            </div>
+            <p class="menu-item-desc item-desc">Crisp layered semolina wafers, fresh avocado tartare, churned sweet curd foam, spicy habanero-mint chutney reduction.</p>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="menu-item-row full-menu-item" data-tags="nonveg spicy">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Gunpowder Pork Belly Bites <span class="badge badge-nonveg">Non-Veg</span><span class="badge badge-spicy">Spicy</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹585</span>
+            </div>
+            <p class="menu-item-desc item-desc">Crispy Berkshire pork belly tossed with fiery Tamilian gunpowder podi, shallots, curry leaves, and palm jaggery drizzle.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. TANDOOR -->
+      <section class="menu-category-section" id="cat-tandoor" style="margin-bottom: 5rem;">
+        <div style="border-bottom: 2px solid var(--border-gold-subtle); padding-bottom: 0.75rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: baseline;">
+          <h2 style="font-size: 2rem; color: var(--gold-light);">03. The Tandoor Hearth</h2>
+          <span style="font-size: 0.8125rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">Charcoal & Live Fire</span>
+        </div>
+
+        <div class="menu-list-grid">
+          <!-- Item 9 -->
+          <div class="menu-item-row full-menu-item" data-tags="nonveg special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Smoked Tandoori Chicken <span class="badge badge-nonveg">Non-Veg</span><span class="badge badge-special">Special</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹595</span>
+            </div>
+            <p class="menu-item-desc item-desc">Corn-fed organic chicken char-grilled in our clay hearth with Mathania chillies, hung yoghurt marinade, and fresh coriander mint foam.</p>
+          </div>
+
+          <!-- Item 10 -->
+          <div class="menu-item-row full-menu-item" data-tags="nonveg gluten-free">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Artisanal Mustard Salmon Tikka <span class="badge badge-nonveg">Non-Veg</span><span class="badge badge-veg">GF</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹745</span>
+            </div>
+            <p class="menu-item-desc item-desc">Atlantic salmon marinated with cold-pressed yellow mustard, raw turmeric, and dill leaf, flashed over smoldering charcoals.</p>
+          </div>
+
+          <!-- Item 11 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Charred Malai Broccoli <span class="badge badge-veg">Veg</span><span class="badge badge-veg">GF</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹465</span>
+            </div>
+            <p class="menu-item-desc item-desc">Tender broccoli florets steeped in cream cheese, green cardamom, roasted mace, and roasted cashew dust.</p>
+          </div>
+
+          <!-- Item 12 -->
+          <div class="menu-item-row full-menu-item" data-tags="nonveg special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Tandoori Jumbo Prawns <span class="badge badge-nonveg">Non-Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹675</span>
+            </div>
+            <p class="menu-item-desc item-desc">Bay of Bengal prawns seasoned with ajwain and saffron hung curd, finished with charred lemon and garlic herb butter.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. VEGETARIAN MAINS -->
+      <section class="menu-category-section" id="cat-veg-mains" style="margin-bottom: 5rem;">
+        <div style="border-bottom: 2px solid var(--border-gold-subtle); padding-bottom: 0.75rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: baseline;">
+          <h2 style="font-size: 2rem; color: var(--gold-light);">04. Vegetarian Mains</h2>
+          <span style="font-size: 0.8125rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">Farm & Forest</span>
+        </div>
+
+        <div class="menu-list-grid">
+          <!-- Item 13 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Wild Morel Mushroom Risotto <span class="badge badge-veg">Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹525</span>
+            </div>
+            <p class="menu-item-desc item-desc">Wild foraged Kashmiri morels, Carnaroli rice, shaved black truffles, 24-month aged Parmigiano-Reggiano, and crispy tuile.</p>
+          </div>
+
+          <!-- Item 14 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Urban Dal Makhani (36-Hour) <span class="badge badge-veg">Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹425</span>
+            </div>
+            <p class="menu-item-desc item-desc">Urad lentils slow-cooked for 36 hours over low charcoal heat, enriched with clarified hand-churned white butter and tomato paste.</p>
+          </div>
+
+          <!-- Item 15 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Morel & Apricot Paneer Kofta <span class="badge badge-veg">Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹495</span>
+            </div>
+            <p class="menu-item-desc item-desc">Delicate fresh cottage cheese croquettes filled with dried apricots and wild morels, served in rich cashew-saffron gravy.</p>
+          </div>
+
+          <!-- Item 16 -->
+          <div class="menu-item-row full-menu-item" data-tags="vegan gluten-free">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Coconut & Lemongrass Baingan <span class="badge badge-vegan">Vegan</span><span class="badge badge-veg">GF</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹455</span>
+            </div>
+            <p class="menu-item-desc item-desc">Baby baby eggplants cooked in a coastal coconut milk gravy, tempered with fresh kaffir lime, curry leaves, and roasted coriander.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. NON-VEGETARIAN MAINS -->
+      <section class="menu-category-section" id="cat-non-veg-mains" style="margin-bottom: 5rem;">
+        <div style="border-bottom: 2px solid var(--border-gold-subtle); padding-bottom: 0.75rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: baseline;">
+          <h2 style="font-size: 2rem; color: var(--gold-light);">05. Non-Vegetarian Mains</h2>
+          <span style="font-size: 0.8125rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">Slow Simmered & Roasts</span>
+        </div>
+
+        <div class="menu-list-grid">
+          <!-- Item 17 -->
+          <div class="menu-item-row full-menu-item" data-tags="nonveg special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Urban Butter Chicken <span class="badge badge-nonveg">Non-Veg</span><span class="badge badge-special">Icon</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹545</span>
+            </div>
+            <p class="menu-item-desc item-desc">Our flagship dish: pulled tandoori chicken simmered in a 16-hour reduction of vine-ripened tomatoes, sweet butter, and roasted kasuri methi.</p>
+          </div>
+
+          <!-- Item 18 -->
+          <div class="menu-item-row full-menu-item" data-tags="nonveg special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Nalli Nihari Ossobuco <span class="badge badge-nonveg">Non-Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹695</span>
+            </div>
+            <p class="menu-item-desc item-desc">Overnight braised lamb shank falling off the bone, aromatic bone marrow gravy, topped with matchstick ginger and lime oil.</p>
+          </div>
+
+          <!-- Item 19 -->
+          <div class="menu-item-row full-menu-item" data-tags="nonveg gluten-free">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Alleppey Chilean Sea Bass <span class="badge badge-nonveg">Non-Veg</span><span class="badge badge-veg">GF</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹685</span>
+            </div>
+            <p class="menu-item-desc item-desc">Pan-seared sea bass fillet in raw mango coconut milk curry, mustard seeds, and freshly crushed pink peppercorns.</p>
+          </div>
+
+          <!-- Item 20 -->
+          <div class="menu-item-row full-menu-item" data-tags="nonveg spicy">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Rajasthani Laal Maas Ravioli <span class="badge badge-nonveg">Non-Veg</span><span class="badge badge-spicy">Spicy</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹645</span>
+            </div>
+            <p class="menu-item-desc item-desc">Handmade pasta parcels stuffed with spicy slow-cooked goat shoulder, bathing in a smoked Mathania chilli jus with garlic curd drops.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. RICE & BREADS -->
+      <section class="menu-category-section" id="cat-rice-breads" style="margin-bottom: 5rem;">
+        <div style="border-bottom: 2px solid var(--border-gold-subtle); padding-bottom: 0.75rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: baseline;">
+          <h2 style="font-size: 2rem; color: var(--gold-light);">06. Rice & Artisanal Breads</h2>
+          <span style="font-size: 0.8125rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">Aged Grains & Live Oven</span>
+        </div>
+
+        <div class="menu-list-grid">
+          <!-- Item 21 -->
+          <div class="menu-item-row full-menu-item" data-tags="nonveg special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Dum Pukht Awadhi Lamb Biryani <span class="badge badge-nonveg">Non-Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹625</span>
+            </div>
+            <p class="menu-item-desc item-desc">Aged long-grain basmati, tender young lamb, saffron milk, sealed in puff pastry crust and served with smoked garlic raita.</p>
+          </div>
+
+          <!-- Item 22 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Subz Saffron Biryani <span class="badge badge-veg">Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹485</span>
+            </div>
+            <p class="menu-item-desc item-desc">Baby vegetables, water chestnuts, lotus seeds, kewra water, and caramelised onions cooked under slow clay steam.</p>
+          </div>
+
+          <!-- Item 23 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Black Truffle & Gruyère Naan <span class="badge badge-veg">Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹225</span>
+            </div>
+            <p class="menu-item-desc item-desc">Clay-oven baked bread stuffed with melted Swiss Gruyère cheese and brushed with French white truffle butter.</p>
+          </div>
+
+          <!-- Item 24 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Amritsari Chur-Chur Kulcha <span class="badge badge-veg">Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹185</span>
+            </div>
+            <p class="menu-item-desc item-desc">Flaky multi-layered bread filled with spiced potato, coriander, and pomegranate seeds, crushed by hand with desi ghee.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. DESSERTS -->
+      <section class="menu-category-section" id="cat-desserts" style="margin-bottom: 5rem;">
+        <div style="border-bottom: 2px solid var(--border-gold-subtle); padding-bottom: 0.75rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: baseline;">
+          <h2 style="font-size: 2rem; color: var(--gold-light);">07. Desserts</h2>
+          <span style="font-size: 0.8125rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">Sweet Symphony</span>
+        </div>
+
+        <div class="menu-list-grid">
+          <!-- Item 25 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Dark Chocolate Gulab Jamun <span class="badge badge-veg">Veg</span><span class="badge badge-special">Icon</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹325</span>
+            </div>
+            <p class="menu-item-desc item-desc">Warm Belgian chocolate molten center, 24k gold leaf, crushed Iranian pistachios, and Tahitian vanilla bean gelato.</p>
+          </div>
+
+          <!-- Item 26 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Saffron Rasmalai Tres Leches <span class="badge badge-veg">Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹345</span>
+            </div>
+            <p class="menu-item-desc item-desc">Ultra-light vanilla sponge soaked in three milks infused with Kashmiri saffron, topped with hand-pulled chenna and rose petals.</p>
+          </div>
+
+          <!-- Item 27 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Deconstructed Filter Coffee Tiramisu <span class="badge badge-veg">Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹365</span>
+            </div>
+            <p class="menu-item-desc item-desc">Dark roast Karnataka espresso decoction, Italian mascarpone cream, chicory dust, and almond jaggery biscotti.</p>
+          </div>
+
+          <!-- Item 28 -->
+          <div class="menu-item-row full-menu-item" data-tags="veg">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Paan & White Chocolate Bonbons <span class="badge badge-veg">Veg</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹285</span>
+            </div>
+            <p class="menu-item-desc item-desc">Artisanal chocolate shells filled with house gulkand, betel leaf essence, and dried silver-leaf cardamom pearls.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. BEVERAGES -->
+      <section class="menu-category-section" id="cat-beverages" style="margin-bottom: 2rem;">
+        <div style="border-bottom: 2px solid var(--border-gold-subtle); padding-bottom: 0.75rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: baseline;">
+          <h2 style="font-size: 2rem; color: var(--gold-light);">08. Beverages & Cocktails</h2>
+          <span style="font-size: 0.8125rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">Craft Mixology</span>
+        </div>
+
+        <div class="menu-list-grid">
+          <!-- Item 29 -->
+          <div class="menu-item-row full-menu-item" data-tags="special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">The Twilight <span class="badge badge-special">Signature</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹575</span>
+            </div>
+            <p class="menu-item-desc item-desc">Small-batch bourbon, saffron blossom honey, bespoke orange bitters, presented with torched aromatic cedarwood smoke.</p>
+          </div>
+
+          <!-- Item 30 -->
+          <div class="menu-item-row full-menu-item" data-tags="special">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Spiced Tamarind Paloma <span class="badge badge-special">Signature</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹545</span>
+            </div>
+            <p class="menu-item-desc item-desc">100% blue agave tequila, artisan tamarind shrub, freshly pressed pink grapefruit juice, sparkling soda, mineral rock salt.</p>
+          </div>
+
+          <!-- Item 31 -->
+          <div class="menu-item-row full-menu-item" data-tags="vegan">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Saffron Lychee Shrub (Zero-Proof) <span class="badge badge-vegan">Mocktail</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹345</span>
+            </div>
+            <p class="menu-item-desc item-desc">Cold-pressed royal lychee juice, royal saffron infusion, organic apple cider shrub, club soda, and fresh mint.</p>
+          </div>
+
+          <!-- Item 32 -->
+          <div class="menu-item-row full-menu-item" data-tags="vegan">
+            <div class="menu-item-top">
+              <span class="menu-item-name item-title">Smoked Kaffir Nimbu Pani <span class="badge badge-vegan">Mocktail</span></span>
+              <span class="menu-dots"></span>
+              <span class="menu-item-price">₹295</span>
+            </div>
+            <p class="menu-item-desc item-desc">Freshly squeezed Meyer lemons, roasted cumin charcoal smoke, crushed kaffir lime leaf, rock salt, and sparkling water.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Reservation Callout Strip -->
+      <div style="margin-top: 5rem; background: var(--bg-surface); border: 1px solid var(--border-gold); border-radius: var(--radius-lg); padding: 3rem 2rem; text-align: center;">
+        <h3 style="font-size: 2rem; margin-bottom: 0.75rem;">Experience These Flavours In Person</h3>
+        <p style="color: var(--text-secondary); max-width: 580px; margin: 0 auto 2rem auto;">
+          Reservations are recommended for both lunch and dinner services. We gladly cater to bespoke dietary requirements.
+        </p>
+        <button type="button" class="btn btn-primary btn-lg" data-open-modal="reservation">
+          Reserve a Table Now
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col-brand">
+        <a href="index.html" class="brand-logo" style="margin-bottom: 0.5rem;">
+          <div class="brand-symbol">UE</div>
+          <div class="brand-text">
+            <span class="brand-name">Urban Eats</span>
+            <span class="brand-tagline">Bold Flavours. Modern Dining.</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          An elevated dining destination where progressive Indian soul meets contemporary culinary craft.
+        </p>
+        <div class="footer-socials">
+          <a href="javascript:void(0)" class="social-icon-btn demo-action-btn" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="javascript:void(0)" class="social-icon-btn demo-action-btn" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="javascript:void(0)" class="social-icon-btn demo-action-btn" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="menu.html" class="footer-link">Menu</a></li>
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+          <li><a href="private-dining.html" class="footer-link">Private Dining</a></li>
+          <li><a href="reservations.html" class="footer-link">Reservations</a></li>
+          <li><a href="faq.html" class="footer-link">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Visit</h4>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>LOCATION • LOCATE US</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            Mon–Thu: 12:00 PM – 11:00 PM<br>
+            Fri–Sat: 12:00 PM – 12:00 AM<br>
+            Sun: 12:00 PM – 10:30 PM
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Contact</h4>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="javascript:void(0)" class="demo-action-btn" style="color: inherit;">+00 000 000 0000</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="javascript:void(0)" class="demo-action-btn" style="color: inherit;">hello@example.com</a>
+        </div>
+        <div style="margin-top: 1rem;">
+          <a href="contact.html" class="btn btn-ghost btn-sm">Full Contact Page</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>
+        © 2026 Urban Eats. All rights reserved. Designed by MNW Creative Studio.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Action Bar -->
+  <aside class="mobile-action-bar" aria-label="Mobile Quick Actions">
+    <div class="mobile-action-bar-inner">
+      <a href="javascript:void(0)" class="action-bar-btn demo-action-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Call</span>
+      </a>
+      <a href="javascript:void(0)" class="action-bar-btn demo-action-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+      <a href="menu.html" class="action-bar-btn" style="color: var(--gold-light);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+        <span>Menu</span>
+      </a>
+      <button type="button" class="action-bar-btn highlight" data-open-modal="reservation" style="border: none; cursor: pointer;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <span>Reserve</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Universal Reservation Modal -->
+  <div class="modal-backdrop" data-modal="reservation" role="dialog" aria-modal="true" aria-label="Table Reservation Modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <form class="reservation-form" novalidate>
+        <div class="section-eyebrow no-after">Online Booking</div>
+        <h3 style="font-size: 1.65rem; margin-bottom: 0.35rem;">Reserve Your Table</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Urban Eats • LOCATION</p>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Full Name <span class="req">*</span></label>
+            <input type="text" name="name" class="form-control" placeholder="Your name" required>
+            <span class="form-error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="req">*</span></label>
+            <input type="tel" name="phone" class="form-control" placeholder="+00 000 000 0000" required>
+            <span class="form-error-msg"></span>
+          </div>
+          <div class="form-group col-span-2">
+            <label class="form-label">Email Address <span class="req">*</span></label>
+            <input type="email" name="email" class="form-control" placeholder="hello@example.com" required>
+            <span class="form-error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Date <span class="req">*</span></label>
+            <input type="date" name="date" class="form-control" required>
+            <span class="form-error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Time <span class="req">*</span></label>
+            <select name="time" class="form-control" required>
+              <option value="" disabled selected>Select time</option>
+              <option value="12:30 PM">12:30 PM (Lunch)</option>
+              <option value="1:30 PM">1:30 PM (Lunch)</option>
+              <option value="7:30 PM">7:30 PM (Dinner)</option>
+              <option value="8:30 PM">8:30 PM (Dinner)</option>
+              <option value="9:30 PM">9:30 PM (Dinner)</option>
+            </select>
+            <span class="form-error-msg"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Guests</label>
+            <select name="guests" class="form-control">
+              <option value="1 Guest">1 Guest</option>
+              <option value="2 Guests" selected>2 Guests</option>
+              <option value="4 Guests">4 Guests</option>
+              <option value="6 Guests">6 Guests</option>
+              <option value="8+ Guests">8+ Guests</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Occasion</label>
+            <select name="occasion" class="form-control">
+              <option value="Dining">Fine Dining</option>
+              <option value="Date Night">Date Night</option>
+              <option value="Birthday">Birthday</option>
+              <option value="Business">Business</option>
+            </select>
+          </div>
+          <div class="form-group col-span-2" style="margin-top: 0.5rem;">
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Confirm Table Request
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="reservation-success-card">
+        <div class="success-check-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 class="success-title" style="font-size: 1.5rem;">Table Reserved</h3>
+        <p class="success-desc">
+          Your reservation request has been received. Reference: <strong class="receipt-ref" style="color: var(--gold-light);">UE-CH-0000</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

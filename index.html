@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Eats | Bold Flavours. Modern Dining.</title>
+  <meta name="description" content="Urban Eats is an elevated modern Indian and global fusion restaurant. Experience progressive culinary craftsmanship, ambient charcoal & gold aesthetics, and thoughtful hospitality.">
+  <link rel="canonical" href="https://urbaneats.in/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:url" content="https://urbaneats.in/">
+  <meta property="og:title" content="Urban Eats | Bold Flavours. Modern Dining.">
+  <meta property="og:description" content="An elevated dining experience where Indian soul meets contemporary global flavours.">
+  <meta property="og:image" content="assets/images/hero-interior.jpg">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://urbaneats.in/">
+  <meta name="twitter:title" content="Urban Eats | Bold Flavours. Modern Dining.">
+  <meta name="twitter:description" content="Elevated modern Indian dining. Bold culinary artistry, bespoke cocktails, and unforgettable atmospheres.">
+  <meta name="twitter:image" content="assets/images/hero-interior.jpg">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data: Schema.org Restaurant (Demo Representation) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Urban Eats",
+    "image": "assets/images/hero-interior.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "LOCATION",
+      "addressRegion": "LOCATE US"
+    },
+    "url": "https://urbaneats.in",
+    "telephone": "+00 000 000 0000",
+    "servesCuisine": ["Modern Indian", "Global Fusion", "Progressive Tandoor"],
+    "priceRange": "₹₹₹",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "12:00",
+        "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "12:00",
+        "closes": "00:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "12:00",
+        "closes": "22:30"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Demo Notice Banner -->
+  <div class="demo-banner">
+    <span>Portfolio showcase concept curated for <strong>Urban Eats</strong> • Demo Showcase</span>
+  </div>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container-wide header-inner">
+      <!-- Brand Wordmark / Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Urban Eats Home">
+        <div class="brand-symbol">UE</div>
+        <div class="brand-text">
+          <span class="brand-name">Urban Eats</span>
+          <span class="brand-tagline">Bold Flavours. Modern Dining.</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="about.html" class="nav-link">Our Story</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="private-dining.html" class="nav-link">Private Dining</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm header-cta" data-open-modal="reservation">
+          Reserve a Table
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="navBackdrop"></div>
+  <aside class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <span class="brand-name" style="font-size: 1.25rem;">Urban Eats</span>
+      </div>
+      <ul class="mobile-nav-menu">
+        <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+        <li><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+        <li><a href="about.html" class="mobile-nav-link">Our Story</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="private-dining.html" class="mobile-nav-link">Private Dining</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        <li><a href="faq.html" class="mobile-nav-link">FAQs</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <button type="button" class="btn btn-primary" style="width: 100%;" data-open-modal="reservation">
+        Reserve a Table
+      </button>
+      <div class="mobile-nav-info">
+        <p><strong>LOCATION • LOCATE US</strong></p>
+        <p>Open 7 Days • 12:00 PM onwards</p>
+        <p>Phone: +00 000 000 0000</p>
+      </div>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background">
+        <img src="assets/images/hero-interior.jpg" alt="Urban Eats ambient luxury dining room at night" width="1920" height="1080">
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-location-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          LOCATION
+        </div>
+
+        <h1 class="hero-title">
+          Bold Flavours.<br>
+          <span class="text-gold-gradient">Modern Dining.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          An elevated dining experience where Indian soul meets contemporary global flavours. Crafted with passion, served in an atmosphere designed for memorable evenings.
+        </p>
+
+        <div class="hero-actions">
+          <a href="menu.html" class="btn btn-secondary btn-lg">
+            Explore Menu
+          </a>
+          <button type="button" class="btn btn-primary btn-lg" data-open-modal="reservation">
+            Reserve a Table
+          </button>
+        </div>
+      </div>
+
+      <!-- Subtle Scroll Indicator -->
+      <a href="#trust" class="hero-scroll-indicator" aria-label="Scroll to discover">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll to Explore</span>
+      </a>
+    </section>
+
+    <!-- 2. TRUST / QUICK INFO STRIP -->
+    <section class="trust-strip" id="trust" aria-label="Restaurant Highlights">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <div class="trust-label">Modern Indian Fusion</div>
+            <div class="trust-sub">Progressive Culinary Art</div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                <line x1="6" y1="1" x2="6" y2="4"/>
+                <line x1="10" y1="1" x2="10" y2="4"/>
+                <line x1="14" y1="1" x2="14" y2="4"/>
+              </svg>
+            </div>
+            <div class="trust-label">Dine-In • Private • Takeaway</div>
+            <div class="trust-sub">Full Service Hospitality</div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="trust-label">Open 7 Days</div>
+            <div class="trust-sub">Lunch 12:00 PM – Late Dinner</div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="trust-label">LOCATION</div>
+            <div class="trust-sub">LOCATE US</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SIGNATURE EXPERIENCE SECTION -->
+    <section class="section-padding experience-section" id="experience">
+      <div class="container">
+        <div class="experience-grid">
+          <div class="experience-image-wrap">
+            <img src="assets/images/culinary-craft.jpg" alt="Executive chef plating precision modern Indian fusion dish" class="experience-main-img" loading="lazy">
+          </div>
+
+          <div class="experience-content">
+            <div class="section-eyebrow no-after">The Urban Experience</div>
+            <h2 class="section-title">More Than a Meal.</h2>
+            <p class="section-subtitle">
+              Urban Eats brings together bold Indian flavours, modern techniques and an atmosphere designed for memorable evenings.
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: -0.5rem; line-height: 1.7;">
+              Every plate is a tribute to diverse culinary heritage reimagined through progressive gastronomy. From charcoal-kissed tandoor delicacies to velvety slow-cooked reductions, we balance nostalgia and modern sophistication in every bite.
+            </p>
+
+            <div class="experience-features">
+              <div class="feature-card">
+                <div class="feature-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                  </svg>
+                </div>
+                <h3 class="feature-card-title">Crafted With Character</h3>
+                <p class="feature-card-desc">Bespoke spice blends ground in-house daily with heirloom recipes.</p>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a10 10 0 0 0-7 17.07V22l3-1.5 3 1.5 3-1.5 3 1.5v-2.93A10 10 0 0 0 12 2z"/>
+                  </svg>
+                </div>
+                <h3 class="feature-card-title">Seasonal Ingredients</h3>
+                <p class="feature-card-desc">Wild foraged morels, fresh organic dairy, and organic herbs.</p>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                  </svg>
+                </div>
+                <h3 class="feature-card-title">Every Occasion</h3>
+                <p class="feature-card-desc">From intimate date nights to lively family celebrations and business dinners.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SIGNATURE DISHES -->
+    <section class="section-padding dishes-section" id="signature-dishes">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Culinary Masterpieces</div>
+          <h2 class="section-title">Signature Dishes</h2>
+          <p class="section-subtitle">
+            An introduction to our culinary philosophy—where revered Indian recipes meet boundary-pushing contemporary artistry.
+          </p>
+        </div>
+
+        <div class="dishes-grid">
+          <!-- Dish 1: Truffle Butter Paneer Tikka -->
+          <article class="dish-card">
+            <div class="dish-img-wrap">
+              <span class="badge badge-veg dish-tag-badge">Vegetarian</span>
+              <img src="assets/images/dish-paneer-tikka.jpg" alt="Truffle Butter Paneer Tikka on slate plate" class="dish-img" loading="lazy">
+            </div>
+            <div class="dish-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Truffle Butter Paneer Tikka</h3>
+                <span class="dish-price">₹495</span>
+              </div>
+              <p class="dish-description">
+                Organic artisanal cottage cheese marinated in smoked spices, glazed with French white truffle butter, mint emulsion, and microgold.
+              </p>
+              <div class="dish-footer">
+                <span class="badge badge-special">Chef's Signature</span>
+                <a href="menu.html#starters" class="dish-link">
+                  View Full Menu
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 2: Smoked Tandoori Chicken -->
+          <article class="dish-card">
+            <div class="dish-img-wrap">
+              <span class="badge badge-nonveg dish-tag-badge">Non-Veg</span>
+              <img src="assets/images/dish-tandoori-chicken.jpg" alt="Smoked Tandoori Chicken with mint foam" class="dish-img" loading="lazy">
+            </div>
+            <div class="dish-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Smoked Tandoori Chicken</h3>
+                <span class="dish-price">₹595</span>
+              </div>
+              <p class="dish-description">
+                Tender corn-fed chicken thigh char-grilled over live charcoal embers, infused with Mathania chillies, accompanied by coriander mint foam.
+              </p>
+              <div class="dish-footer">
+                <span class="badge badge-spicy">Mild Smoke</span>
+                <a href="menu.html#tandoor" class="dish-link">
+                  View Full Menu
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 3: Urban Butter Chicken -->
+          <article class="dish-card">
+            <div class="dish-img-wrap">
+              <span class="badge badge-nonveg dish-tag-badge">Non-Veg</span>
+              <img src="assets/images/dish-butter-chicken.jpg" alt="Urban Butter Chicken with garlic truffle naan" class="dish-img" loading="lazy">
+            </div>
+            <div class="dish-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Urban Butter Chicken</h3>
+                <span class="dish-price">₹545</span>
+              </div>
+              <p class="dish-description">
+                Our modern icon: pulled tandoori chicken simmered for 16 hours in a silk tomato-makhani reduction with organic butter and kasuri methi.
+              </p>
+              <div class="dish-footer">
+                <span class="badge badge-special">House Icon</span>
+                <a href="menu.html#non-veg-mains" class="dish-link">
+                  View Full Menu
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 4: Artisanal Burrata Chaat -->
+          <article class="dish-card">
+            <div class="dish-img-wrap">
+              <span class="badge badge-veg dish-tag-badge">Vegetarian</span>
+              <img src="assets/images/dish-burrata-chaat.jpg" alt="Artisanal Burrata Chaat with tamarind and sev" class="dish-img" loading="lazy">
+            </div>
+            <div class="dish-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Artisanal Burrata Chaat</h3>
+                <span class="dish-price">₹475</span>
+              </div>
+              <p class="dish-description">
+                Fresh imported Pugliese burrata perched on spiced chickpeas, date-tamarind reduction, crisp sev, pomegranate pearls, and fresh micro herbs.
+              </p>
+              <div class="dish-footer">
+                <span class="badge badge-special">Fusion Star</span>
+                <a href="menu.html#small-plates" class="dish-link">
+                  View Full Menu
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 5: Wild Morel Mushroom Risotto -->
+          <article class="dish-card">
+            <div class="dish-img-wrap">
+              <span class="badge badge-veg dish-tag-badge">Vegetarian</span>
+              <img src="assets/images/dish-mushroom-risotto.jpg" alt="Wild Morel & Mushroom Risotto with parmesan tuile" class="dish-img" loading="lazy">
+            </div>
+            <div class="dish-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Wild Morel Mushroom Risotto</h3>
+                <span class="dish-price">₹525</span>
+              </div>
+              <p class="dish-description">
+                Carnaroli rice cooked with wild foraged forest morels, black truffle shavings, aged 24-month Parmigiano-Reggiano, and crispy tuile.
+              </p>
+              <div class="dish-footer">
+                <span class="badge badge-special">Seasonal Delight</span>
+                <a href="menu.html#veg-mains" class="dish-link">
+                  View Full Menu
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 6: Dark Chocolate Gulab Jamun -->
+          <article class="dish-card">
+            <div class="dish-img-wrap">
+              <span class="badge badge-veg dish-tag-badge">Vegetarian</span>
+              <img src="assets/images/dish-chocolate-gulab-jamun.jpg" alt="Dark Chocolate Gulab Jamun with molten core and vanilla gelato" class="dish-img" loading="lazy">
+            </div>
+            <div class="dish-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Dark Chocolate Gulab Jamun</h3>
+                <span class="dish-price">₹325</span>
+              </div>
+              <p class="dish-description">
+                Warm artisanal khoya dumpling filled with 70% molten Belgian chocolate lava, dusted with 24k gold leaf and paired with vanilla bean gelato.
+              </p>
+              <div class="dish-footer">
+                <span class="badge badge-special">Signature Dessert</span>
+                <a href="menu.html#desserts" class="dish-link">
+                  View Full Menu
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. MENU PREVIEW SECTION WITH TABS -->
+    <section class="section-padding menu-preview-section" id="menu-preview">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Interactive Tasting Card</div>
+          <h2 class="section-title">Menu Preview</h2>
+          <p class="section-subtitle">
+            Explore our curated selection. Every dish is crafted to order using authentic spices, contemporary methods, and seasonal local harvests.
+          </p>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="menu-tabs" role="tablist">
+          <button type="button" class="menu-tab-btn active" data-tab="tab-starters" role="tab" aria-selected="true">Starters</button>
+          <button type="button" class="menu-tab-btn" data-tab="tab-smallplates" role="tab" aria-selected="false">Small Plates</button>
+          <button type="button" class="menu-tab-btn" data-tab="tab-mains" role="tab" aria-selected="false">Mains</button>
+          <button type="button" class="menu-tab-btn" data-tab="tab-veg" role="tab" aria-selected="false">Vegetarian</button>
+          <button type="button" class="menu-tab-btn" data-tab="tab-desserts" role="tab" aria-selected="false">Desserts</button>
+          <button type="button" class="menu-tab-btn" data-tab="tab-beverages" role="tab" aria-selected="false">Beverages</button>
+        </div>
+
+        <!-- Tab 1: Starters -->
+        <div class="menu-tab-content active" id="tab-starters">
+          <div class="menu-list-grid">
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Truffle Butter Paneer Tikka <span class="badge badge-veg">Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹495</span>
+              </div>
+              <p class="menu-item-desc">Artisanal cottage cheese, white truffle emulsion, picked baby shallots.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Amritsari Soft Shell Crab <span class="badge badge-nonveg">Non-Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹625</span>
+              </div>
+              <p class="menu-item-desc">Crispy spiced batter, ajwain salt, charred lime, crushed avocado dip.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Smoked Galouti Sliders <span class="badge badge-nonveg">Non-Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹545</span>
+              </div>
+              <p class="menu-item-desc">Melt-in-mouth lamb patties, brioche buns, mint lacquer, caramelized onions.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Crispy Lotus Stem Honey Chilli <span class="badge badge-vegan">Vegan</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹425</span>
+              </div>
+              <p class="menu-item-desc">Wok-tossed lotus root, Kashmiri chilli glaze, toasted sesame seeds.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Small Plates -->
+        <div class="menu-tab-content" id="tab-smallplates">
+          <div class="menu-list-grid">
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Artisanal Burrata Chaat <span class="badge badge-veg">Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹475</span>
+              </div>
+              <p class="menu-item-desc">Italian burrata, roasted cumin spiced potatoes, tamarind reduction, crispy puris.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Pulled Jackfruit Tacos <span class="badge badge-vegan">Vegan</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹445</span>
+              </div>
+              <p class="menu-item-desc">Kathal braised in Chettinad spices, mini millet rotis, coconut chimichurri.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Tandoori Prawns Skewers <span class="badge badge-nonveg">Non-Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹675</span>
+              </div>
+              <p class="menu-item-desc">Jumbo coastal prawns, yellow mustard marinade, charcoal grilled with lemon foam.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Avocado & Sev Puri Mille-Feuille <span class="badge badge-veg">Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹415</span>
+              </div>
+              <p class="menu-item-desc">Layered crisp papdi wafers, Hass avocado tartare, sweet yoghurt, spicy mint gel.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Mains -->
+        <div class="menu-tab-content" id="tab-mains">
+          <div class="menu-list-grid">
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Urban Butter Chicken <span class="badge badge-nonveg">Non-Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹545</span>
+              </div>
+              <p class="menu-item-desc">Slow-braised tandoori chicken chunks, rich buttery tomato velouté, fenugreek.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Nalli Nihari Ossobuco <span class="badge badge-nonveg">Non-Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹695</span>
+              </div>
+              <p class="menu-item-desc">Overnight slow-cooked lamb shank, aromatic bone marrow gravy, ginger julienne.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Alleppey Sea Bass Curry <span class="badge badge-nonveg">Non-Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹685</span>
+              </div>
+              <p class="menu-item-desc">Pan-seared Chilean sea bass, raw mango coconut broth, tempered curry leaf oil.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Dum Pukht Lamb Biryani <span class="badge badge-nonveg">Non-Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹625</span>
+              </div>
+              <p class="menu-item-desc">Aged basmati rice sealed in pastry crust with fragrant spices, served with burani raita.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Vegetarian -->
+        <div class="menu-tab-content" id="tab-veg">
+          <div class="menu-list-grid">
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Wild Morel Mushroom Risotto <span class="badge badge-veg">Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹525</span>
+              </div>
+              <p class="menu-item-desc">Kashmiri wild morels, arborio rice, 24-month parmesan tuile, white truffle perfume.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Urban Dal Makhani <span class="badge badge-veg">Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹425</span>
+              </div>
+              <p class="menu-item-desc">Black lentils slow-cooked for 36 hours on charcoal with clarified white butter.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Stuffed Morel Paneer Kofta <span class="badge badge-veg">Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹495</span>
+              </div>
+              <p class="menu-item-desc">Handmade cottage cheese dumplings filled with dried fruits, rich cashew saffron gravy.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Smoked Baingan Bharta Tart <span class="badge badge-veg">Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹445</span>
+              </div>
+              <p class="menu-item-desc">Charred aubergine puree in crisp savoury tart crust, goat cheese mousse, pine nuts.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Desserts -->
+        <div class="menu-tab-content" id="tab-desserts">
+          <div class="menu-list-grid">
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Dark Chocolate Gulab Jamun <span class="badge badge-veg">Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹325</span>
+              </div>
+              <p class="menu-item-desc">Warm Belgian chocolate molten center, 24k gold leaf, Tahitian vanilla bean gelato.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Saffron Rasmalai Tres Leches <span class="badge badge-veg">Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹345</span>
+              </div>
+              <p class="menu-item-desc">Sponge soaked in kesar rabri milk, Iranian pistachios, whipped cardamom cream.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Deconstructed Filter Coffee Tiramisu <span class="badge badge-veg">Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹365</span>
+              </div>
+              <p class="menu-item-desc">Coorg dark roast espresso, mascarpone mousse, chicory dust, almond biscotti.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Paan & White Chocolate Bonbons <span class="badge badge-veg">Veg</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹285</span>
+              </div>
+              <p class="menu-item-desc">Handcrafted pralines filled with gulkand, betel leaf essence, and candied rose petals.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 6: Beverages -->
+        <div class="menu-tab-content" id="tab-beverages">
+          <div class="menu-list-grid">
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">The Twilight <span class="badge badge-special">Cocktail</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹575</span>
+              </div>
+              <p class="menu-item-desc">Bourbon, Kashmiri saffron honey, aromatic bitters, torched aromatic pine smoke.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Spiced Tamarind Paloma <span class="badge badge-special">Cocktail</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹545</span>
+              </div>
+              <p class="menu-item-desc">Blanco tequila, house tamarind cordial, pink grapefruit soda, black salt rim.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Saffron Lychee Shrub (Zero Proof) <span class="badge badge-vegan">Mocktail</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹345</span>
+              </div>
+              <p class="menu-item-desc">Cold-pressed lychee, artisan saffron infusion, sparkling water, mint sprig.</p>
+            </div>
+
+            <div class="menu-item-row">
+              <div class="menu-item-top">
+                <span class="menu-item-name">Smoked Kaffir Nimbu Pani <span class="badge badge-vegan">Mocktail</span></span>
+                <span class="menu-dots"></span>
+                <span class="menu-item-price">₹295</span>
+              </div>
+              <p class="menu-item-desc">Fresh Meyer lemon, roasted cumin smoke, kaffir lime leaf, rock salt.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-preview-cta">
+          <a href="menu.html" class="btn btn-primary btn-lg">
+            View Full Menu (32+ Creations)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. WHY URBAN EATS -->
+    <section class="section-padding why-section" id="why-us">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">The Philosophy</div>
+          <h2 class="section-title">Why Urban Eats</h2>
+          <p class="section-subtitle">
+            We exist at the crossroad of fine craftsmanship, authentic culinary heritage, and elevated urban dining.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="why-card-num">01</span>
+            <div class="why-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Contemporary Indian Cuisine</h3>
+            <p class="why-card-desc">
+              Preserving sacred Indian culinary techniques while embracing European precision and global plating standards.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-card-num">02</span>
+            <div class="why-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Curated Ingredients</h3>
+            <p class="why-card-desc">
+              Directly sourced whole spices, wild forest morels, organic dairy, and artisanal cheeses.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-card-num">03</span>
+            <div class="why-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3 class="why-card-title">Thoughtful Hospitality</h3>
+            <p class="why-card-desc">
+              Impeccable, intuitive service inspired by the warmth of Indian hospitality and the finesse of international fine dining.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <span class="why-card-num">04</span>
+            <div class="why-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/>
+              </svg>
+            </div>
+            <h3 class="why-card-title">An Atmosphere To Remember</h3>
+            <p class="why-card-desc">
+              Rich charcoal walls, brushed brass fixtures, acoustic intimacy, and custom amber lighting tailored for every evening.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. RESTAURANT STORY SECTION -->
+    <section class="section-padding story-section" id="story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-content">
+            <div class="section-eyebrow no-after">Our Heritage</div>
+            <h2 class="section-title">Born From The City.<br><span class="text-gold-gradient">Inspired By The Plate.</span></h2>
+            <p class="section-subtitle">
+              is a city founded on architectural boldness, clean geometry, and progressive thought. Urban Eats was conceived with that exact spirit.
+            </p>
+            <div class="story-quote">
+              “We asked ourselves: What happens when you honor the nostalgic warmth of Indian clay-oven cooking, but apply the finesse and minimalism of modern culinary design?”
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 2rem;">
+              The result is a culinary journey where smoke, velvet textures, and vibrant spices tell stories of both ancient markets and cosmopolitan dining rooms. Every dish is composed with geometric balance, purposeful simplicity, and unapologetic flavour.
+            </p>
+            <a href="about.html" class="btn btn-secondary">
+              Discover Our Story
+            </a>
+          </div>
+
+          <div class="story-image-wrap">
+            <img src="assets/images/ambience-table.jpg" alt="Intimate table setting at Urban Eats with glowing candle" class="story-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CHEF SECTION -->
+    <section class="section-padding chef-section" id="chef">
+      <div class="container">
+        <div class="chef-grid">
+          <div class="chef-image-wrap">
+            <img src="assets/images/chef-arjun-mehta.jpg" alt="Executive Chef Arjun Mehta in modern restaurant kitchen" class="chef-img" loading="lazy">
+            <div class="chef-badge-overlay">
+              <div class="chef-name">Chef Arjun Mehta</div>
+              <div class="chef-role">Executive Chef & Culinary Director</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-eyebrow no-after">The Culinary Mind</div>
+            <h2 class="section-title">Chef Arjun Mehta</h2>
+            <p class="section-subtitle" style="margin-bottom: 1.25rem;">
+              “Indian food has never been shy about flavor. Our role today is not to dilute that boldness, but to frame it with modern precision and elegance.”
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1.25rem;">
+              Chef Arjun brings together classical Indian techniques and contemporary global influences. Having trained in esteemed kitchens across world culinary capitals, his cuisine is characterized by respect for traditional tandoor methods combined with modern sous-vide precision and creative textural pairings.
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.75; margin-bottom: 2rem;">
+              At Urban Eats, Chef Arjun personally curates each seasonal rotation, working directly with dedicated regional farmers to source heirloom ingredients that give each dish its distinct, memorable identity.
+            </p>
+
+            <div style="display: flex; gap: 2.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
+              <div>
+                <div style="font-family: var(--font-serif); font-size: 1.85rem; font-weight: 700; color: var(--gold-primary);">16+</div>
+                <div style="font-size: 0.785rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Years Culinary Craft</div>
+              </div>
+              <div>
+                <div style="font-family: var(--font-serif); font-size: 1.85rem; font-weight: 700; color: var(--gold-primary);">32</div>
+                <div style="font-size: 0.785rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Curated Creations</div>
+              </div>
+              <div>
+                <div style="font-family: var(--font-serif); font-size: 1.85rem; font-weight: 700; color: var(--gold-primary);">100%</div>
+                <div style="font-size: 0.785rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">In-House Spice Roasting</div>
+              </div>
+            </div>
+
+            <div class="chef-signature">Arjun Mehta</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. GALLERY SECTION & LIGHTBOX -->
+    <section class="section-padding gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Visual Narrative</div>
+          <h2 class="section-title">The Gallery</h2>
+          <p class="section-subtitle">
+            A visual glimpse into our plates, craft cocktail bar, dining spaces, and the passion that brings Urban Eats to life every evening.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Item 1: Dining Room -->
+          <div class="gallery-item span-2" tabindex="0" role="button" aria-label="Open photo: Main Dining Room">
+            <img src="assets/images/hero-interior.jpg" alt="Main Dining Room at Urban Eats" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Main Dining Room & Amber Chandeliers</div>
+              <div class="gallery-category">Interior Atmosphere</div>
+            </div>
+          </div>
+
+          <!-- Item 2: Truffle Paneer -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Truffle Butter Paneer Tikka">
+            <img src="assets/images/dish-paneer-tikka.jpg" alt="Truffle Butter Paneer Tikka Plating" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Truffle Butter Paneer Tikka</div>
+              <div class="gallery-category">Signature Dish</div>
+            </div>
+          </div>
+
+          <!-- Item 3: Cocktail Bar -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Cocktail Bar & Mixology">
+            <img src="assets/images/bar-cocktail.jpg" alt="Mixologist crafting smoked bourbon cocktail" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">The Urban Bar & Smoked Cocktails</div>
+              <div class="gallery-category">Beverage Craft</div>
+            </div>
+          </div>
+
+          <!-- Item 4: Tandoori Chicken -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Smoked Tandoori Chicken">
+            <img src="assets/images/dish-tandoori-chicken.jpg" alt="Smoked Tandoori Chicken Plated" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Smoked Tandoori Chicken</div>
+              <div class="gallery-category">Signature Dish</div>
+            </div>
+          </div>
+
+          <!-- Item 5: Kitchen Flame -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: The Clay Oven Kitchen">
+            <img src="assets/images/kitchen-flame.jpg" alt="Chef lifting skewers from clay tandoor oven" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">The Clay Tandoor Hearth</div>
+              <div class="gallery-category">Behind The Pass</div>
+            </div>
+          </div>
+
+          <!-- Item 6: Burrata Chaat -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Artisanal Burrata Chaat">
+            <img src="assets/images/dish-burrata-chaat.jpg" alt="Artisanal Burrata Chaat" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Artisanal Burrata Chaat</div>
+              <div class="gallery-category">Fusion Small Plate</div>
+            </div>
+          </div>
+
+          <!-- Item 7: Private Dining Suite -->
+          <div class="gallery-item span-2" tabindex="0" role="button" aria-label="Open photo: Private Dining Suite">
+            <img src="assets/images/private-dining.jpg" alt="Velvet Lounge Private Dining Suite with wine cellar" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">The Velvet Lounge Suite</div>
+              <div class="gallery-category">Private Dining & Events</div>
+            </div>
+          </div>
+
+          <!-- Item 8: Dark Chocolate Jamun -->
+          <div class="gallery-item" tabindex="0" role="button" aria-label="Open photo: Dark Chocolate Gulab Jamun">
+            <img src="assets/images/dish-chocolate-gulab-jamun.jpg" alt="Dark Chocolate Gulab Jamun" class="gallery-thumb" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-title">Dark Chocolate Gulab Jamun</div>
+              <div class="gallery-category">Artisan Dessert</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="gallery.html" class="btn btn-secondary">
+            View Complete Photo Showcase
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 11. RESERVATION SECTION -->
+    <section class="section-padding reservation-section" id="reservations">
+      <div class="container">
+        <div class="reservation-grid">
+          <!-- Left: Information & Schedule -->
+          <div class="reservation-info">
+            <div class="section-eyebrow no-after">Table Booking</div>
+            <h2 class="section-title">Your Table Is Waiting.</h2>
+            <p class="section-subtitle">
+              Join us for an evening of modern culinary exploration. We recommend booking at least 24 hours in advance for dinner seatings.
+            </p>
+
+            <div class="reservation-perks">
+              <div class="perk-item">
+                <svg class="perk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                <div class="perk-text">
+                  <h4>Instant Confirmation</h4>
+                  <p>Immediate digital receipt and table verification via SMS/WhatsApp.</p>
+                </div>
+              </div>
+
+              <div class="perk-item">
+                <svg class="perk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <div class="perk-text">
+                  <h4>Seating Preferences</h4>
+                  <p>Specify intimate booths, courtyard tables, or proximity to our bar.</p>
+                </div>
+              </div>
+
+              <div class="perk-item">
+                <svg class="perk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <div class="perk-text">
+                  <h4>15-Minute Grace Window</h4>
+                  <p>Tables held with care up to 15 minutes past scheduled seating time.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="quick-contact-box">
+              <div class="quick-contact-row">
+                <span class="quick-contact-label">Call to Reserve</span>
+                <a href="javascript:void(0)" class="quick-contact-value demo-action-btn" style="color: var(--gold-light);">+00 000 000 0000</a>
+              </div>
+              <div class="quick-contact-row">
+                <span class="quick-contact-label">Direct WhatsApp</span>
+                <a href="javascript:void(0)" class="quick-contact-value demo-action-btn" style="color: var(--color-veg);">
+                  +00 000 000 0000
+                </a>
+              </div>
+              <div class="quick-contact-row">
+                <span class="quick-contact-label">Location</span>
+                <span class="quick-contact-value">LOCATION</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Reservation Form -->
+          <div class="form-card">
+            <form class="reservation-form" id="homeReservationForm" novalidate>
+              <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Request Table Reservation</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.75rem;">
+                Please provide your details below. We look forward to welcoming you.
+              </p>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="resName">Full Name <span class="req">*</span></label>
+                  <input type="text" id="resName" name="name" class="form-control" placeholder="e.g. Guest Name" required>
+                  <span class="form-error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="resPhone">Phone Number <span class="req">*</span></label>
+                  <input type="tel" id="resPhone" name="phone" class="form-control" placeholder="+00 000 000 0000" required>
+                  <span class="form-error-msg"></span>
+                </div>
+
+                <div class="form-group col-span-2">
+                  <label class="form-label" for="resEmail">Email Address <span class="req">*</span></label>
+                  <input type="email" id="resEmail" name="email" class="form-control" placeholder="hello@example.com" required>
+                  <span class="form-error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="resDate">Dining Date <span class="req">*</span></label>
+                  <input type="date" id="resDate" name="date" class="form-control" required>
+                  <span class="form-error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="resTime">Preferred Time <span class="req">*</span></label>
+                  <select id="resTime" name="time" class="form-control" required>
+                    <option value="" disabled selected>Select Seating Time</option>
+                    <optgroup label="Lunch">
+                      <option value="12:00 PM">12:00 PM</option>
+                      <option value="12:30 PM">12:30 PM</option>
+                      <option value="1:00 PM">1:00 PM</option>
+                      <option value="1:30 PM">1:30 PM</option>
+                      <option value="2:00 PM">2:00 PM</option>
+                      <option value="2:30 PM">2:30 PM</option>
+                    </optgroup>
+                    <optgroup label="Dinner">
+                      <option value="7:00 PM">7:00 PM</option>
+                      <option value="7:30 PM">7:30 PM</option>
+                      <option value="8:00 PM">8:00 PM</option>
+                      <option value="8:30 PM">8:30 PM</option>
+                      <option value="9:00 PM">9:00 PM</option>
+                      <option value="9:30 PM">9:30 PM</option>
+                      <option value="10:00 PM">10:00 PM</option>
+                    </optgroup>
+                  </select>
+                  <span class="form-error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="resGuests">Number of Guests <span class="req">*</span></label>
+                  <select id="resGuests" name="guests" class="form-control" required>
+                    <option value="1 Guest">1 Guest</option>
+                    <option value="2 Guests" selected>2 Guests (Intimate Table)</option>
+                    <option value="3 Guests">3 Guests</option>
+                    <option value="4 Guests">4 Guests</option>
+                    <option value="5 Guests">5 Guests</option>
+                    <option value="6 Guests">6 Guests</option>
+                    <option value="7-10 Guests">7–10 Guests (Large Table)</option>
+                    <option value="10+ Guests">10+ Guests (Private Dining)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="resOccasion">Occasion</label>
+                  <select id="resOccasion" name="occasion" class="form-control">
+                    <option value="Casual Fine Dining">Casual Fine Dining</option>
+                    <option value="Romantic Date Night">Romantic Date Night</option>
+                    <option value="Birthday Celebration">Birthday Celebration</option>
+                    <option value="Anniversary">Anniversary</option>
+                    <option value="Business Dinner">Business Dinner</option>
+                    <option value="Family Gathering">Family Gathering</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-span-2">
+                  <label class="form-label" for="resRequests">Special Requests / Dietary Notes</label>
+                  <textarea id="resRequests" name="requests" class="form-control" rows="3" placeholder="Tell us about allergies, preferred booth, birthday cake request, etc."></textarea>
+                </div>
+
+                <div class="form-group col-span-2" style="margin-top: 0.5rem;">
+                  <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                    Request Reservation
+                  </button>
+                  <span style="font-size: 0.75rem; color: var(--text-muted); text-align: center; display: block; margin-top: 0.75rem;">
+                    * Interactive portfolio demonstration. Your submission generates a verified booking preview.
+                  </span>
+                </div>
+              </div>
+            </form>
+
+            <!-- Success State Card -->
+            <div class="reservation-success-card">
+              <div class="success-check-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <h3 class="success-title">Reservation Request Received</h3>
+              <p class="success-desc">
+                We’ll confirm your table shortly. A digital confirmation has been registered on our host stand.
+              </p>
+
+              <div class="reservation-receipt">
+                <div class="receipt-row">
+                  <span class="receipt-label">Booking Reference:</span>
+                  <span class="receipt-val receipt-ref" style="color: var(--gold-light); font-family: monospace; font-size: 1rem;">UE-CH-00000</span>
+                </div>
+                <div class="receipt-row">
+                  <span class="receipt-label">Guest Name:</span>
+                  <span class="receipt-val receipt-name">Guest</span>
+                </div>
+                <div class="receipt-row">
+                  <span class="receipt-label">Date & Time:</span>
+                  <span class="receipt-val receipt-datetime">Date at Time</span>
+                </div>
+                <div class="receipt-row">
+                  <span class="receipt-label">Party Size:</span>
+                  <span class="receipt-val receipt-guests">2 Guests</span>
+                </div>
+                <div class="receipt-row">
+                  <span class="receipt-label">Occasion:</span>
+                  <span class="receipt-val receipt-occasion">Casual Dining</span>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-whatsapp-confirm demo-action-btn">
+                  Confirm on WhatsApp
+                </a>
+                <button type="button" class="btn btn-ghost btn-sm btn-new-booking">
+                  Book Another Table
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. PRIVATE DINING / EVENTS PREVIEW -->
+    <section class="section-padding private-dining-section" id="private-dining">
+      <div class="container">
+        <div class="private-dining-grid">
+          <div>
+            <div class="section-eyebrow no-after">Exclusive Gatherings</div>
+            <h2 class="section-title">Made For Memorable Occasions.</h2>
+            <p class="section-subtitle">
+              Whether hosting an intimate birthday celebration, high-level corporate dinner, or private sommelier tasting, our bespoke suites deliver discrete luxury.
+            </p>
+
+            <div class="private-events-list">
+              <div class="private-event-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+                Birthday Dinners
+              </div>
+              <div class="private-event-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                Corporate Dinners
+              </div>
+              <div class="private-event-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                Family Celebrations
+              </div>
+              <div class="private-event-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+                Engagements & Toasts
+              </div>
+              <div class="private-event-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Chef’s Table Experiences
+              </div>
+              <div class="private-event-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+                Private Cocktail Parties
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="private-dining.html" class="btn btn-primary">
+                Enquire For Private Dining
+              </a>
+              <button type="button" class="btn btn-secondary" data-open-modal="private-dining">
+                Quick Event Enquiry
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/images/private-dining.jpg" alt="Exclusive private dining suite with illuminated wine cellar" class="experience-main-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. LOCATION & HOURS -->
+    <section class="section-padding location-section" id="location">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Visit Us</div>
+          <h2 class="section-title">Location & Hours</h2>
+          <p class="section-subtitle">
+            Conveniently situated in the culinary quarter. Valet parking provided for all dinner reservations.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <!-- Operating Hours -->
+          <div class="hours-card">
+            <h3 style="font-size: 1.4rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.65rem;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              Weekly Schedule
+            </h3>
+
+            <div class="hours-row">
+              <span class="hours-day">Monday – Thursday</span>
+              <span class="hours-time">12:00 PM – 11:00 PM</span>
+            </div>
+
+            <div class="hours-row">
+              <span class="hours-day">Friday – Saturday</span>
+              <span class="hours-time">12:00 PM – 12:00 AM</span>
+            </div>
+
+            <div class="hours-row">
+              <span class="hours-day">Sunday</span>
+              <span class="hours-time">12:00 PM – 10:30 PM</span>
+            </div>
+
+            <div class="kitchen-note">
+              <strong>Notice:</strong> Kitchen closes 30 minutes before restaurant closing each evening.
+            </div>
+
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="javascript:void(0)" class="btn btn-secondary btn-sm demo-action-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Call Concierge
+              </a>
+              <a href="javascript:void(0)" class="btn btn-ghost btn-sm demo-action-btn">
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+
+          <!-- Stylized Dark Map Visual -->
+          <div class="map-container">
+            <div class="map-bg-pattern"></div>
+            <div class="map-content-card">
+              <div class="map-pin-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.35rem;">Urban Eats</h3>
+              <p style="color: var(--gold-light); font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem;">
+                LOCATE US
+              </p>
+              <p style="color: var(--text-muted); font-size: 0.8125rem; line-height: 1.5; margin-bottom: 1.5rem;">
+                LOCATE US<br>
+                Complimentary Valet Parking Available
+              </p>
+              <a href="javascript:void(0)" class="btn btn-primary btn-sm demo-action-btn" style="width: 100%;">
+                Get Directions
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. FAQ ACCORDION SECTION -->
+    <section class="section-padding faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Common Queries</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Everything you need to know about reserving, dining, private hosting, and our culinary standards.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Do you take reservations?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-body">
+                Yes, we strongly encourage advance reservations, especially for weekend dinner services and private suites. Walk-in guests are always warmly welcomed based on immediate dining room availability.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Do you offer vegetarian options?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-body">
+                Extensively! More than 50% of our culinary creations are crafted for vegetarian dining, including our signature Truffle Butter Paneer Tikka, Wild Morel Mushroom Risotto, and Burrata Chaat.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Do you offer vegan options?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-body">
+                Yes. We offer clearly designated 100% plant-based options such as Pulled Jackfruit Tacos, Crispy Honey-Chilli Lotus Stem, and Coconut Tempered Dal. Our chefs can also adapt multiple dishes upon request.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Is takeaway available?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-body">
+                Yes, takeaway is available during all operational hours. We use custom biodegradable insulated packaging designed to maintain plating integrity, aroma, and optimal temperature.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Do you host private events?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-body">
+                Absolutely. The Velvet Lounge accommodates up to 16 guests with a private sommelier and dedicated service team. For larger occasions up to 40 guests, our Courtyard Terrace is available for buyout bookings.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Do you accommodate large groups?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-body">
+                Yes, our main dining room easily accommodates groups of 8 to 14 guests. For groups larger than 8, we recommend selecting our Chef’s Tasting Family Menu for seamless course delivery.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Do you have parking?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-body">
+                Yes, complimentary professional valet parking is available right at our main portico entrance for all dining guests.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Can I request a special occasion setup?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-body">
+                Certainly. We can arrange celebratory dessert candle presentations, floral centerpieces, customized printed menu headings, and champagne service with 24 hours advance notice.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 9 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>Do you accommodate dietary restrictions?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-body">
+                Our kitchen takes food allergies very seriously. Please mention any nut, dairy, gluten, or allium sensitivities when reserving or to your server before placing your order.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 10 -->
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span>What are your opening hours?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="accordion-panel">
+              <div class="accordion-body">
+                We are open 7 days a week: Monday to Thursday from 12:00 PM to 11:00 PM; Friday and Saturday from 12:00 PM to 12:00 AM; and Sunday from 12:00 PM to 10:30 PM. The kitchen closes 30 minutes prior to closing.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="faq.html" class="btn btn-secondary">
+            View Complete FAQ Directory
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 21. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Col 1: Brand -->
+      <div class="footer-col-brand">
+        <a href="index.html" class="brand-logo" style="margin-bottom: 0.5rem;">
+          <div class="brand-symbol">UE</div>
+          <div class="brand-text">
+            <span class="brand-name">Urban Eats</span>
+            <span class="brand-tagline">Bold Flavours. Modern Dining.</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          An elevated dining destination where progressive Indian soul meets contemporary culinary craft.
+        </p>
+        <div class="footer-socials">
+          <a href="javascript:void(0)" class="social-icon-btn demo-action-btn" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="javascript:void(0)" class="social-icon-btn demo-action-btn" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="javascript:void(0)" class="social-icon-btn demo-action-btn" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div>
+        <h4 class="footer-col-title">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="menu.html" class="footer-link">Menu</a></li>
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+          <li><a href="private-dining.html" class="footer-link">Private Dining</a></li>
+          <li><a href="reservations.html" class="footer-link">Reservations</a></li>
+          <li><a href="faq.html" class="footer-link">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Visit & Hours -->
+      <div>
+        <h4 class="footer-col-title">Visit</h4>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>LOCATION • LOCATE US</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            Mon–Thu: 12:00 PM – 11:00 PM<br>
+            Fri–Sat: 12:00 PM – 12:00 AM<br>
+            Sun: 12:00 PM – 10:30 PM
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="btn btn-secondary btn-sm demo-action-btn" style="margin-top: 0.5rem;">
+          Get Directions
+        </a>
+      </div>
+
+      <!-- Col 4: Contact -->
+      <div>
+        <h4 class="footer-col-title">Contact</h4>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="javascript:void(0)" class="demo-action-btn" style="color: inherit;">+00 000 000 0000</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="javascript:void(0)" class="demo-action-btn" style="color: inherit;">hello@example.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <a href="javascript:void(0)" class="demo-action-btn" style="color: inherit;">WhatsApp Booking</a>
+        </div>
+        <div style="margin-top: 1rem;">
+          <a href="contact.html" class="btn btn-ghost btn-sm">Full Contact Page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="container footer-bottom">
+      <div>
+        © 2026 Urban Eats. All rights reserved. Designed by MNW Creative Studio.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 22. FLOATING MOBILE ACTION BAR -->
+  <aside class="mobile-action-bar" aria-label="Mobile Quick Actions">
+    <div class="mobile-action-bar-inner">
+      <a href="javascript:void(0)" class="action-bar-btn demo-action-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>Call</span>
+      </a>
+
+      <a href="javascript:void(0)" class="action-bar-btn demo-action-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+
+      <a href="menu.html" class="action-bar-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        <span>Menu</span>
+      </a>
+
+      <button type="button" class="action-bar-btn highlight" data-open-modal="reservation" style="border: none; cursor: pointer;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <span>Reserve</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+    <button class="lightbox-close" aria-label="Close Lightbox">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox-btn lightbox-prev" aria-label="Previous Photo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="lightbox-btn lightbox-next" aria-label="Next Photo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="lightbox-content">
+      <div class="lightbox-img-wrap">
+        <img src="" alt="" class="lightbox-img">
+      </div>
+      <div class="lightbox-caption">
+        <div class="lightbox-caption-title"></div>
+        <div class="lightbox-caption-counter"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UNIVERSAL RESERVATION MODAL -->
+  <div class="modal-backdrop" data-modal="reservation" role="dialog" aria-modal="true" aria-label="Table Reservation Modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <form class="reservation-form" id="modalReservationForm" novalidate>
+        <div class="section-eyebrow no-after" style="margin-bottom: 0.35rem;">Online Booking</div>
+        <h3 style="font-size: 1.65rem; margin-bottom: 0.35rem;">Reserve Your Table</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+          Urban Eats • LOCATION
+        </p>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Full Name <span class="req">*</span></label>
+            <input type="text" name="name" class="form-control" placeholder="Your name" required>
+            <span class="form-error-msg"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="req">*</span></label>
+            <input type="tel" name="phone" class="form-control" placeholder="+00 000 000 0000" required>
+            <span class="form-error-msg"></span>
+          </div>
+
+          <div class="form-group col-span-2">
+            <label class="form-label">Email Address <span class="req">*</span></label>
+            <input type="email" name="email" class="form-control" placeholder="hello@example.com" required>
+            <span class="form-error-msg"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Date <span class="req">*</span></label>
+            <input type="date" name="date" class="form-control" required>
+            <span class="form-error-msg"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Time Slot <span class="req">*</span></label>
+            <select name="time" class="form-control" required>
+              <option value="" disabled selected>Select time</option>
+              <option value="12:30 PM">12:30 PM (Lunch)</option>
+              <option value="1:30 PM">1:30 PM (Lunch)</option>
+              <option value="7:30 PM">7:30 PM (Dinner)</option>
+              <option value="8:30 PM">8:30 PM (Dinner)</option>
+              <option value="9:30 PM">9:30 PM (Dinner)</option>
+            </select>
+            <span class="form-error-msg"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Guests</label>
+            <select name="guests" class="form-control">
+              <option value="1 Guest">1 Guest</option>
+              <option value="2 Guests" selected>2 Guests</option>
+              <option value="4 Guests">4 Guests</option>
+              <option value="6 Guests">6 Guests</option>
+              <option value="8+ Guests">8+ Guests</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Occasion</label>
+            <select name="occasion" class="form-control">
+              <option value="Dining">Fine Dining</option>
+              <option value="Date Night">Date Night</option>
+              <option value="Birthday">Birthday</option>
+              <option value="Business">Business</option>
+            </select>
+          </div>
+
+          <div class="form-group col-span-2">
+            <label class="form-label">Special Request</label>
+            <input type="text" name="requests" class="form-control" placeholder="Dietary restrictions or seating preference">
+          </div>
+
+          <div class="form-group col-span-2" style="margin-top: 0.5rem;">
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Confirm Table Request
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Modal Success Card -->
+      <div class="reservation-success-card">
+        <div class="success-check-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 class="success-title" style="font-size: 1.5rem;">Table Reserved</h3>
+        <p class="success-desc">
+          Your reservation request has been registered. Reference: <strong class="receipt-ref" style="color: var(--gold-light);">UE-CH-0000</strong>
+        </p>
+        <div style="margin-top: 1.5rem;">
+          <button type="button" class="btn btn-secondary modal-close-btn-inline" onclick="this.closest('.modal-backdrop').classList.remove('open'); document.body.style.overflow=''">
+            Close Window
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UNIVERSAL PRIVATE DINING MODAL -->
+  <div class="modal-backdrop" data-modal="private-dining" role="dialog" aria-modal="true" aria-label="Private Dining Enquiry Modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <form class="private-dining-form" id="modalPrivateForm">
+        <div class="section-eyebrow no-after" style="margin-bottom: 0.35rem;">Private Events</div>
+        <h3 style="font-size: 1.65rem; margin-bottom: 0.35rem;">Enquire For Private Dining</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+          Host your private celebration at The Velvet Lounge or The Chef’s Table.
+        </p>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Organizer Name <span class="req">*</span></label>
+            <input type="text" name="name" class="form-control" placeholder="Full name" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Phone Number <span class="req">*</span></label>
+            <input type="tel" name="phone" class="form-control" placeholder="Contact number" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Event Type</label>
+            <select name="event_type" class="form-control">
+              <option value="Birthday Celebration">Birthday Celebration</option>
+              <option value="Corporate Dinner">Corporate Dinner</option>
+              <option value="Anniversary">Anniversary</option>
+              <option value="Engagement">Engagement</option>
+              <option value="Chef's Table">Chef’s Tasting Table</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Estimated Guests</label>
+            <select name="guests" class="form-control">
+              <option value="6-10 Guests">6–10 Guests</option>
+              <option value="11-16 Guests">11–16 Guests (The Velvet Lounge)</option>
+              <option value="17-30 Guests">17–30 Guests (Terrace Courtyard)</option>
+              <option value="30+ Guests">30+ Guests (Full Buyout)</option>
+            </select>
+          </div>
+
+          <div class="form-group col-span-2">
+            <label class="form-label">Target Date</label>
+            <input type="date" name="date" class="form-control">
+          </div>
+
+          <div class="form-group col-span-2" style="margin-top: 0.5rem;">
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Submit Event Enquiry
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- COOKIE CONSENT BANNER -->
+  <aside class="cookie-banner" aria-label="Cookie Preferences">
+    <h3 class="cookie-banner-title">Cookie Preferences</h3>
+    <p class="cookie-banner-text">
+      Urban Eats utilizes essential cookies to ensure seamless navigation, reservation caching, and a personalized dining experience.
+    </p>
+    <div class="cookie-banner-actions">
+      <button type="button" class="btn btn-primary btn-sm btn-accept-cookies">Accept All</button>
+      <button type="button" class="btn btn-ghost btn-sm btn-decline-cookies">Essential Only</button>
+    </div>
+  </aside>
+
+  <!-- Core JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
